@@ -108,7 +108,7 @@ main section{
     padding: 130px;
     border-radius: 10px;
     background:#FFF8F3 ;
-    margin: 130px, 0;
+    margin: 130px 0;
 }
 .about-info-container{
     display: flex;
@@ -118,7 +118,7 @@ main section{
 .about-info{
     text-align: center;
 }
-#what-i-do{
+#what-i-do-description{
     padding: 30px 150px;
 
 }
@@ -209,18 +209,35 @@ textarea{
 
 
 /* mobile device */
-.hide{
-    display: none;
-}
+    
 @media screen and (max-width:576px) {
-    .skill-container,.resume-container{
-        flex-direction: column;
-        
+    .header{
+        background-image: none;
     }
-    #what-i-do{
+     nav,
+     nav >ul,
+    .banner,
+   .skill-container,
+   .resume-container,
+   .about-info-container,
+   footer{
+       flex-direction: column ;
+   }
+   .nav > ul{
+    gap: 10px;
+   }
+
+   .banner .profile-pic{
+    width: 100%;
+   }
+   .banner,
+  #what-i-do-description{
         padding: 20px;
     }
-    footer{
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    footer ,.about{
         padding: 10px;
     }
     .footer-column{
@@ -228,17 +245,25 @@ textarea{
     }
     .Contact input[type="text"],
   .Contact input[type="email"],
- textarea{
-    width: 80%;
-      
-
-
+    textarea{
+        width: 80%;
+    }
+    
 }
-@media screen and(min-width:576px) and (max-width:960) {
-    footer{
+    
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .footer{
         padding: 30px;
     }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+
 }
+   
+   
+
    
 
     
